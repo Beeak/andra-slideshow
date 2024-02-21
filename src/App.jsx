@@ -1,4 +1,4 @@
-import silinderjakoonus from './media/20240221_103233.jpg';
+import silinderjakoonus from './media/silinderjakoonus.jpg';
 import silindri_valem from './media/valemid/silinder.png'
 import koonuse_valem from './media/valemid/koonus.png'
 
@@ -19,16 +19,18 @@ export default function App() {
   return (
     <>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-        <SwiperSlide className='flex gap-2'>
-          <div>
+        <SwiperSlide className='flex gap-2 flex-col'>
             <h1>Silinder ja Koonus</h1>
-            <img className='h-screen' src={silinderjakoonus} alt="Slide 1" />
-          </div>
-          <div>
-            <h2>Asukoht: Kooli kõrval parklas</h2>
-            <img src={silindri_valem} alt="" />
-            <img src={koonuse_valem} alt="" />
-          </div>
+            <div className='flex'>
+              <div>
+                <img className='h-screen' src={silinderjakoonus} alt="Slide 1" />
+              </div>
+              <div>
+                <h2>Asukoht: Kooli kõrval parklas</h2>
+                <img src={silindri_valem} alt="" />
+                <img src={koonuse_valem} alt="" />
+              </div>
+            </div>
         </SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
