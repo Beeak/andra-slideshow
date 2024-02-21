@@ -5,6 +5,9 @@ import koonuse_valem from './media/valemid/koonus.png';
 import Kera from './media/kera.jpg';
 import kera_valemid from './media/valemid/keravalemid.jpg';
 
+import kuup from './media/kuup.jpg';
+import kuup_valem from './media/valemid/kuup.jpeg'
+
 import React, {  } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -23,10 +26,10 @@ export default function App() {
     <>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide className='flex gap-2 flex-col'>
-            <h1>Silinder ja Koonus</h1>
-            <div className='flex'>
+            <h1 className='text-xl underline'>Silinder ja Koonus</h1>
+            <div className='flex gap-4'>
               <div>
-                <img className='h-screen' src={silinderjakoonus} alt="Slide 1" />
+                <img className='h-screen' src={silinderjakoonus} alt="Slide 3" />
               </div>
               <div>
                 <h2>Asukoht: Kooli kõrval parklas</h2>
@@ -35,7 +38,6 @@ export default function App() {
               </div>
             </div>
         </SwiperSlide>
-
         <SwiperSlide className='flex gap-2 flex-col'>
           <h1>Kera</h1>
           <div className='flex'>
@@ -50,6 +52,19 @@ export default function App() {
         </SwiperSlide>
 
         <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide className='flex gap-2 flex-col'>
+            <h1 className='text-xl underline'>Kuup</h1>
+            <div className='flex gap-4'>
+              <div>
+                <img className='h-screen' src={kuup} alt="Slide 1" />
+              </div>
+              <div>
+                <h2>Asukoht: Rohu 5, Kuressaare, 93819 Saare maakond</h2>
+                <img src={kuup_valem} alt="" />
+              </div>
+            </div>
+        </SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
       </Swiper>
