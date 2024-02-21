@@ -8,8 +8,12 @@ import kera_valemid from './media/valemid/keravalemid.jpg';
 import kuup from './media/kuup.jpg';
 import kuup_valem from './media/valemid/kuup.jpeg'
 
+
 import hulktahukas from './media/hulktahukas.jpg';
 import hulktahuka_valemid from './media/valemid/korrapäranehulktahukas.png';
+
+import pyramiid from './media/pyramiid.jpg';
+import pyramiid_valem from './media/valemid/pyramiid.png'
 
 import React, {  } from "react";
 // Import Swiper React components
@@ -67,6 +71,7 @@ export default function App() {
               </div>
             </div>
         </SwiperSlide>
+
         <SwiperSlide>
           <h1 className='text-xl underline pr-4'>Korrapärane hulktahukas</h1>
               <div className='flex gap-4'>
@@ -78,11 +83,21 @@ export default function App() {
                   <img src={hulktahuka_valemid} alt="" />
                 </div>
               </div>
-          </SwiperSlide>
-        <SwiperSlide>
-
         </SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
+
+        <SwiperSlide className='flex gap-2 flex-col'>
+            <h1 className='text-xl underline'>Kuup</h1>
+            <div className='flex gap-4'>
+              <div>
+                <img className='h-screen' src={pyramiid} alt="Slide 1" />
+              </div>
+              <div>
+                <h2>Asukoht: Tallinna 19, Kuressaare, 93811 Saare maakond</h2>
+                <img src={pyramiid_valem} alt="" />
+              </div>
+            </div>
+        </SwiperSlide>
+
       </Swiper>
     </>
   );
