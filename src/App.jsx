@@ -1,6 +1,9 @@
 import silinderjakoonus from './media/silinderjakoonus.jpg';
-import silindri_valem from './media/valemid/silinder.png'
-import koonuse_valem from './media/valemid/koonus.png'
+import silindri_valem from './media/valemid/silinder.png';
+import koonuse_valem from './media/valemid/koonus.png';
+
+import Kera from './media/kera.jpg';
+import kera_valemid from './media/valemid/keravalemid.jpg';
 
 import kuup from './media/kuup.jpg';
 import kuup_valem from './media/valemid/kuup.jpeg'
@@ -35,6 +38,20 @@ export default function App() {
               </div>
             </div>
         </SwiperSlide>
+        <SwiperSlide className='flex gap-2 flex-col'>
+          <h1>Kera</h1>
+          <div className='flex'>
+            <div>
+              <img class='h-screen' src={Kera} alt="Slide 2" />
+            </div>
+            <div>
+              <h2>Asukoht: Lossi pargis</h2>
+              <img src={kera_valemid} alt="" />
+            </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide className='flex gap-2 flex-col'>
             <h1 className='text-xl underline'>Kuup</h1>
