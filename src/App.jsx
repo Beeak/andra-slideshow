@@ -86,7 +86,7 @@ export default function App() {
         </SwiperSlide>
 
         <SwiperSlide className='flex gap-2 flex-col'>
-            <h1 className='text-xl underline'>Kuup</h1>
+            <h1 className='text-xl underline'>Püramiid</h1>
             <div className='flex gap-4'>
               <div>
                 <img className='h-screen' src={pyramiid} alt="Slide 1" />
