@@ -18,6 +18,9 @@ import pyramiid_valem from './media/valemid/pyramiid.png'
 import püstprisma from './media/Antenniküljesolevadvalgedasjad.jpg';
 import püstprisma_valem from './media/valemid/püstprismavalem.png';
 
+import risttahukas from './media/risttahukas.jpg';
+import risttahukas_valem from './media/valemid/risttahukas.webp'
+
 import React, {  } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -111,6 +114,19 @@ export default function App() {
                 <h2>Asukoht: Politsei jaoskonna katusel</h2>
                 <h2>Need valged asjad antenni küljes</h2>
                 <img src={püstprisma_valem} alt="" />
+              </div>
+            </div>
+        </SwiperSlide>
+
+        <SwiperSlide className='flex gap-2 flex-col'>
+            <h1 className='text-xl underline'>Risttahukas</h1>
+            <div className='flex gap-4'>
+              <div>
+                <img className='h-screen' src={risttahukas} alt="Slide 1" />
+              </div>
+              <div>
+                <h2>Asukoht: Kooli kõrval parklas</h2>
+                <img src={risttahukas_valem} alt="" />
               </div>
             </div>
         </SwiperSlide>
