@@ -47,8 +47,8 @@ export default function App() {
         </SwiperSlide>
         
         <SwiperSlide className='flex gap-2 flex-col'>
-          <h1>Kera</h1>
-          <div className='flex'>
+          <h1 className='text-xl underline'>Kera</h1>
+          <div className='flex gap-4'>
             <div>
               <img class='h-screen' src={Kera} alt="Slide 2" />
             </div>
@@ -72,8 +72,8 @@ export default function App() {
             </div>
         </SwiperSlide>
 
-        <SwiperSlide>
-          <h1 className='text-xl underline pr-4'>Korrapärane hulktahukas</h1>
+        <SwiperSlide className='flex gap-2 flex-col'>
+          <h1 className='text-xl underline'>Korrapärane hulktahukas</h1>
               <div className='flex gap-4'>
                 <div>
                   <img className='h-screen' src={hulktahukas} alt="Slide 1" />
