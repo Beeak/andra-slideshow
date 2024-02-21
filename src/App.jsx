@@ -8,6 +8,10 @@ import kera_valemid from './media/valemid/keravalemid.jpg';
 import kuup from './media/kuup.jpg';
 import kuup_valem from './media/valemid/kuup.jpeg'
 
+
+import hulktahukas from './media/hulktahukas.jpg';
+import hulktahuka_valemid from './media/valemid/korrapäranehulktahukas.png';
+
 import pyramiid from './media/pyramiid.jpg';
 import pyramiid_valem from './media/valemid/pyramiid.png'
 
@@ -67,7 +71,20 @@ export default function App() {
               </div>
             </div>
         </SwiperSlide>
-        
+
+        <SwiperSlide>
+          <h1 className='text-xl underline pr-4'>Korrapärane hulktahukas</h1>
+              <div className='flex gap-4'>
+                <div>
+                  <img className='h-screen' src={hulktahukas} alt="Slide 1" />
+                </div>
+                <div>
+                  <h2>Asukoht: Lossi pargis</h2>
+                  <img src={hulktahuka_valemid} alt="" />
+                </div>
+              </div>
+        </SwiperSlide>
+
         <SwiperSlide className='flex gap-2 flex-col'>
             <h1 className='text-xl underline'>Kuup</h1>
             <div className='flex gap-4'>
@@ -80,6 +97,7 @@ export default function App() {
               </div>
             </div>
         </SwiperSlide>
+
       </Swiper>
     </>
   );
