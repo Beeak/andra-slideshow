@@ -8,6 +8,9 @@ import kera_valemid from './media/valemid/keravalemid.jpg';
 import kuup from './media/kuup.jpg';
 import kuup_valem from './media/valemid/kuup.jpeg'
 
+import hulktahukas from './media/hulktahukas.jpg';
+import hulktahuka_valemid from './media/valemid/korrapäranehulktahukas.png';
+
 import React, {  } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -64,8 +67,21 @@ export default function App() {
               </div>
             </div>
         </SwiperSlide>
-        
-        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>
+          <h1 className='text-xl underline pr-4'>Korrapärane hulktahukas</h1>
+              <div className='flex gap-4'>
+                <div>
+                  <img className='h-screen' src={hulktahukas} alt="Slide 1" />
+                </div>
+                <div>
+                  <h2>Asukoht: Lossi pargis</h2>
+                  <img src={hulktahuka_valemid} alt="" />
+                </div>
+              </div>
+          </SwiperSlide>
+        <SwiperSlide>
+
+        </SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
       </Swiper>
     </>
