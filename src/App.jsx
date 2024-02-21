@@ -38,6 +38,7 @@ export default function App() {
               </div>
             </div>
         </SwiperSlide>
+        
         <SwiperSlide className='flex gap-2 flex-col'>
           <h1>Kera</h1>
           <div className='flex'>
@@ -50,9 +51,7 @@ export default function App() {
             </div>
           </div>
         </SwiperSlide>
-
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
+      
         <SwiperSlide className='flex gap-2 flex-col'>
             <h1 className='text-xl underline'>Kuup</h1>
             <div className='flex gap-4'>
@@ -65,6 +64,7 @@ export default function App() {
               </div>
             </div>
         </SwiperSlide>
+        
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
       </Swiper>
