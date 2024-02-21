@@ -15,6 +15,9 @@ import hulktahuka_valemid from './media/valemid/korrapäranehulktahukas.png';
 import pyramiid from './media/pyramiid.jpg';
 import pyramiid_valem from './media/valemid/pyramiid.png'
 
+import risttahukas from './media/risttahukas.jpg';
+import risttahukas_valem from './media/valemid/risttahukas.webp'
+
 import React, {  } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -94,6 +97,19 @@ export default function App() {
               <div>
                 <h2>Asukoht: Tallinna 19, Kuressaare, 93811 Saare maakond</h2>
                 <img src={pyramiid_valem} alt="" />
+              </div>
+            </div>
+        </SwiperSlide>
+
+        <SwiperSlide className='flex gap-2 flex-col'>
+            <h1 className='text-xl underline'>Risttahukas</h1>
+            <div className='flex gap-4'>
+              <div>
+                <img className='h-screen' src={risttahukas} alt="Slide 1" />
+              </div>
+              <div>
+                <h2>Asukoht: Kooli kõrval parklas</h2>
+                <img src={risttahukas_valem} alt="" />
               </div>
             </div>
         </SwiperSlide>
